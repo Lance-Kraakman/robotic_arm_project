@@ -13,8 +13,6 @@
 #include "../components/stepperDriver/stepperDriver.h"
 
 
-static char tag[] = "cpp hello";
-
 extern "C" {
 	void app_main();
 }
@@ -39,7 +37,19 @@ private:
 
 void app_main(void)
 {
-	motorDriver myDriver;
+	// Initilize hardware pins for stepper driver
+	stepperDriver myDriver(26,25,0,0,33);
+	myDriver.init_hardware(); // Initilizes the hardware
+	myDriver.set_step_mode(LOW, LOW); // microstepper mode - See README
+	myDriver.stepper_info();
+
+	vTaskDelay(2500 / portTICK_RATE_MS);
+	myDriver.enable_stepper();
+	myDriver.step_default(LOW, 2000);
+	vTaskDelay(3000 / portTICK_RATE_MS);
+	myDriver.disable_stepper();
+
+
 	while(1) {
 		Greeting myGreeting;
 		myGreeting.setName("Lance Kraakman");

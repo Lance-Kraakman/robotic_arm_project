@@ -505,10 +505,10 @@ C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/main/CMakeFiles/__idf
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/main/CMakeFiles/list_install_components.dir
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/main/CMakeFiles/install/strip.dir
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/CMakeFiles/__idf_motorDriver.dir
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/CMakeFiles/install/local.dir
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/CMakeFiles/install.dir
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/CMakeFiles/edit_cache.dir
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/CMakeFiles/rebuild_cache.dir
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/CMakeFiles/list_install_components.dir
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/CMakeFiles/install/strip.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/install/local.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/install.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/edit_cache.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/__idf_stepperDriver.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/rebuild_cache.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/list_install_components.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/install/strip.dir

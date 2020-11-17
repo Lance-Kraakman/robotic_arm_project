@@ -56,4 +56,4 @@ C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/ulp/libulp.a
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/unity/libunity.a
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/main/libmain.a
-C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/motorDriver/libmotorDriver.a
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/libstepperDriver.a
