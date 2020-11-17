@@ -10,8 +10,8 @@
 #include "esp_event_loop.h"
 #include "nvs_flash.h"
 #include "driver/gpio.h"
+#include "../components/stepperDriver/stepperDriver.h"
 
-#include "../components/motorDriver/motorDriver.h"
 
 static char tag[] = "cpp hello";
 

@@ -5,7 +5,9 @@
  *      Author: lance
  */
 
-#include "motorDriver.h"
+#include "../stepperDriver/stepperDriver.h"
+
+#include "driver/gpio.h"
 
 motorDriver::motorDriver() {
 	// TODO Auto-generated constructor stub
