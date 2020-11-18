@@ -17,50 +17,19 @@ extern "C" {
 	void app_main();
 }
 
-class Greeting {
-public:
-	void helloEnglish() {
-		::printf("Hello %s \n", name.c_str());
-	}
-	void helloFrench() {
-		::printf("Bonjour %s \n", name.c_str());
-	}
-	void setName(std::string name) {
-		this->name = name;
-	}
-private:
-	std::string name = "";
-
-};
-
-
-
 void app_main(void)
 {
 	// Initilize hardware pins for stepper driver
 	stepperDriver myDriver = stepperDriver(26,25,0,0,33);
 	myDriver.init_hardware(); // Initilizes the GPIO pins
-//	myDriver.set_step_mode(LOW, LOW); // microstepper mode - See README
-//	myDriver.stepper_info();
-//
-//	vTaskDelay(2500 / portTICK_RATE_MS);
-//	myDriver.enable_stepper();
-//	myDriver.step_default(LOW, 2000);
-//	vTaskDelay(3000 / portTICK_RATE_MS);
-//	myDriver.disable_stepper();
-//
-//	printf("Starting Joint Check");
-//	vTaskDelay(3000 / portTICK_RATE_MS);
 
+	// Define revolute joint
 	revoluteJoint robotic_joint = revoluteJoint(0,0,50,-50,(1.0/48.0),1,myDriver);
-	robotic_joint.joint_to_angle(-45);
+	robotic_joint.joint_to_angle(-45); // Rotate 45 degrees
 
 	while(1) {
-		Greeting myGreeting;
-		myGreeting.setName("Lance Kraakman");
-		myGreeting.helloEnglish();
-		myGreeting.helloFrench();
-		vTaskDelay(5000/portTICK_RATE_MS);
+
+		//vTaskDelay(5000/portTICK_RATE_MS);
 	}
 }
 

@@ -57,12 +57,9 @@ void stepperDriver::step_default(uint8_t direction, uint32_t steps) {
 	for (int x = 0; x < steps; x++) {
 
 		gpio_set_level((gpio_num_t) this->stp, HIGH);
-		//vTaskDelay(10 / portTICK_RATE_MS);
-		ets_delay_us(2500);//(5 / portTICK_RATE_MS);
+		ets_delay_us(2500); //(5 / portTICK_RATE_MS); -> Need to use vTaskDelay as it is unblocking but it is to slow.
 		gpio_set_level((gpio_num_t) this->stp, LOW);
-		//vTaskDelay(10 / portTICK_RATE_MS);
-		ets_delay_us(2500);
-		//vTaskDelay(5 / portTICK_RATE_MS);
+		ets_delay_us(2500); //(5 / portTICK_RATE_MS);
 	}
 }
 
