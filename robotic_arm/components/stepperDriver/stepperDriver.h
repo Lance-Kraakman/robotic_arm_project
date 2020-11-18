@@ -24,6 +24,7 @@ public:
 	uint8_t MS2;
 	uint8_t EN;
 	stepperDriver(uint8_t stp,uint8_t dir,uint8_t MS1,uint8_t MS2,uint8_t EN);
+	stepperDriver();
 	void init_hardware();
 	void step_default(uint8_t direction, uint32_t steps);
 	void set_step_mode(uint8_t MS1, uint8_t MS2);

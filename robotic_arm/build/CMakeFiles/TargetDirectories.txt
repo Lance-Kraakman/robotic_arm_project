@@ -512,3 +512,10 @@ C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFi
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/rebuild_cache.dir
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/list_install_components.dir
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/CMakeFiles/install/strip.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/install/strip.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/__idf_revoluteJoint.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/install/local.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/install.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/edit_cache.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/rebuild_cache.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/list_install_components.dir

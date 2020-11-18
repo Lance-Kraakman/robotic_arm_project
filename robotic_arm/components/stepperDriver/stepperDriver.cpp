@@ -7,7 +7,7 @@
 
 #include "../stepperDriver/stepperDriver.h"
 #include "driver/gpio.h"
-#include "rom/ets_sys.h"
+#include "esp32/rom/ets_sys.h"
 #include "freertos/FreeRTOS.h"
 #include <freertos/task.h>
 
@@ -17,6 +17,19 @@ stepperDriver::stepperDriver(uint8_t stp,uint8_t dir,uint8_t MS1,uint8_t MS2,uin
 	this->MS1 = MS1;
 	this->MS2 = MS2; //pull = step for tb6600
 	this->EN = EN;
+}
+
+stepperDriver::stepperDriver() {
+	// TODO Auto-generated destructor stub
+	this->stp = 0;
+	this->dir = 0;
+	this->MS1 = 0;
+	this->MS2 = 0; //pull = step for tb6600
+	this->EN = 0;
+}
+
+stepperDriver::~stepperDriver() {
+	// TODO Auto-generated destructor stub
 }
 
 // Inits Pins
@@ -77,8 +90,3 @@ void stepperDriver::enable_stepper() {
 void stepperDriver::disable_stepper() {
 	gpio_set_level((gpio_num_t) this->EN, HIGH);
 }
-
-stepperDriver::~stepperDriver() {
-	// TODO Auto-generated destructor stub
-}
-

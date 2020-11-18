@@ -100,6 +100,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/wifi_provisioning/cmake_install.cmake")
   include("C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/main/cmake_install.cmake")
   include("C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/cmake_install.cmake")
+  include("C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/cmake_install.cmake")
 
 endif()
 
