@@ -519,3 +519,10 @@ C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFi
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/edit_cache.dir
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/rebuild_cache.dir
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/CMakeFiles/list_install_components.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/CMakeFiles/install/local.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/CMakeFiles/install.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/CMakeFiles/edit_cache.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/CMakeFiles/__idf_trajectory.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/CMakeFiles/rebuild_cache.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/CMakeFiles/list_install_components.dir
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/CMakeFiles/install/strip.dir

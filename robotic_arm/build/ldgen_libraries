@@ -58,3 +58,4 @@ C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/wifi_provisioning/lib
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/main/libmain.a
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/stepperDriver/libstepperDriver.a
 C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/revoluteJoint/librevoluteJoint.a
+C:/Users/lance/eclipse-workspace/robotic_arm/build/esp-idf/trajectory/libtrajectory.a
