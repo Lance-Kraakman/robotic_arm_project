@@ -1,6 +1,4 @@
 #include <esp_log.h>
-#include <string>
-#include <cstring>
 #include "sdkconfig.h"
 
 #include "freertos/FreeRTOS.h"
@@ -12,6 +10,7 @@
 #include "driver/gpio.h"
 #include "../components/stepperDriver/stepperDriver.h"
 #include "../components/revoluteJoint/revoluteJoint.h"
+#include "../components/trajectory/trajectory.h"
 
 extern "C" {
 	void app_main();
@@ -20,12 +19,19 @@ extern "C" {
 void app_main(void)
 {
 	// Initilize hardware pins for stepper driver
-	stepperDriver myDriver = stepperDriver(26,25,0,0,33);
-	myDriver.init_hardware(); // Initilizes the GPIO pins
+	//stepperDriver myDriver = stepperDriver(26,25,0,0,33);
+	//myDriver.init_hardware(); // Initilizes the GPIO pins
 
 	// Define revolute joint
-	revoluteJoint robotic_joint = revoluteJoint(0,0,50,-50,(1.0/48.0),1,myDriver);
-	robotic_joint.joint_to_angle(-45); // Rotate 45 degrees
+	//revoluteJoint robotic_joint = revoluteJoint(0,0,50,-50,(1.0/48.0),1,myDriver);
+	//robotic_joint.joint_to_angle(-45); // Rotate 45 degrees
+
+	static const char* TAG = "MyModule";
+
+	trajectory pathOne = trajectory();
+
+
+
 
 	while(1) {
 

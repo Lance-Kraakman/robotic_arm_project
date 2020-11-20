@@ -5,6 +5,9 @@
  *      Author: lance
  */
 #include "../revoluteJoint/revoluteJoint.h"
+#include <vector>
+
+
 
 #ifndef COMPONENTS_TRAJECTORY_TRAJECTORY_H_
 #define COMPONENTS_TRAJECTORY_TRAJECTORY_H_
@@ -12,11 +15,10 @@
 class trajectory {
 public:
 	trajectory();
-	int *recStepArray(); // pointer to array of array of steps
-	int *recPeriodArray(); // pointer to an arrayof periods
-	int **t_period_array;
-	int **step_array;
-	revoluteJoint *joints = NULL;
+	std::vector<std::vector<int>> step_arrays; // Number of time periods in corrosponding sections
+	std::vector<std::vector<int>> period_arrays; // Time periods in corrosponding sections
+	std::vector<revoluteJoint> joint_arrays; // Joints
+
 };
 
 #endif /* COMPONENTS_TRAJECTORY_TRAJECTORY_H_ */
