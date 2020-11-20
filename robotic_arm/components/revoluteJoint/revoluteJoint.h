@@ -25,7 +25,7 @@ public:
 	float calc_steps_to(float angle);  // calculates steps to a desired position
 	int check_range(float angle); //check to see if we can drive the stepper
 	int joint_to_angle(float angle); // Moves the joint to the desired angle
-	void revoluteJoint::update_position(float deg_per_step, int steps); // Caclulates the new position, taking into account discrete step sizes
+	void update_position(float deg_per_step, int steps); // Caclulates the new position, taking into account discrete step sizes
 };
 
 #endif /* COMPONENTS_REVOLUTEJOINT_REVOLUTEJOINT_H_ */

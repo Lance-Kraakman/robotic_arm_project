@@ -29,7 +29,7 @@ void app_main(void)
 
 	while(1) {
 
-		//vTaskDelay(5000/portTICK_RATE_MS);
+		vTaskDelay(5000/portTICK_RATE_MS);
 	}
 }
 

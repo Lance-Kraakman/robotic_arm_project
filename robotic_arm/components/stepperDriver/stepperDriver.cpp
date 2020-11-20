@@ -17,6 +17,8 @@ stepperDriver::stepperDriver(uint8_t stp,uint8_t dir,uint8_t MS1,uint8_t MS2,uin
 	this->MS1 = MS1;
 	this->MS2 = MS2; //pull = step for tb6600
 	this->EN = EN;
+
+
 }
 
 stepperDriver::stepperDriver() {
@@ -55,7 +57,6 @@ void stepperDriver::step_default(uint8_t direction, uint32_t steps) {
 	gpio_set_level((gpio_num_t) this->dir, direction); //pull direction pin in correct direction
 
 	for (int x = 0; x < steps; x++) {
-
 		gpio_set_level((gpio_num_t) this->stp, HIGH);
 		ets_delay_us(2500); //(5 / portTICK_RATE_MS); -> Need to use vTaskDelay as it is unblocking but it is to slow.
 		gpio_set_level((gpio_num_t) this->stp, LOW);
