@@ -14,6 +14,7 @@
 class revoluteJoint {
 public:
 	revoluteJoint(float cur_angle,float des_angle,float max_angle,float min_angle,float gear_ratio, float resolution, stepperDriver jointStepper);
+	virtual ~revoluteJoint();
 	stepperDriver jointStepper;
 	float cur_angle;    		// current position (Theta)
 	float des_angle;    		// desired position (Theta)

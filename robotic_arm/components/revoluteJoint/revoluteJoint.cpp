@@ -19,6 +19,10 @@ revoluteJoint::revoluteJoint(float cur_angle,float des_angle,float max_angle,flo
 	 this->jointStepper = jointStepper;
 }
 
+revoluteJoint::~revoluteJoint() {
+	// Deconstructor
+}
+
 // Calculates the effective degree rotation of the joint per step of the stepper motor
 float revoluteJoint::deg_per_step() {
 	printf("Resolution: %f \n", this->resolution);

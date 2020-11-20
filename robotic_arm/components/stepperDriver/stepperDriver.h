@@ -31,6 +31,8 @@ public:
 	void reset_stepper();
 	void enable_stepper();
 	void disable_stepper();
+	void single_step();
+	void setDirection(uint8_t direction)
 	void stepper_info();
 	virtual ~stepperDriver();
 };
