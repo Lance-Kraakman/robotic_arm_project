@@ -22,6 +22,7 @@ public:
 	revoluteJoint get_joint();
 	std::vector<int> get_step_array();
 	std::vector<int> get_period_array();
+	stepperDriver getStepperDriver();
 	void operateStepperTrajectory(int currentTime); // (Different functions for stepper and servo)
 	std::vector<int> step_array; // Number of time periods in corrosponding sections
 	std::vector<int> period_array; // Time periods in corrosponding sections
