@@ -17,6 +17,7 @@ stepperDriver::stepperDriver(uint8_t stp,uint8_t dir,uint8_t MS1,uint8_t MS2,uin
 	this->MS1 = MS1;
 	this->MS2 = MS2; //pull = step for tb6600
 	this->EN = EN;
+	this->step_state = LOW;
 }
 
 stepperDriver::stepperDriver() {
@@ -26,6 +27,7 @@ stepperDriver::stepperDriver() {
 	this->MS1 = 0;
 	this->MS2 = 0; //pull = step for tb6600
 	this->EN = 0;
+	this->step_state = LOW;
 }
 
 stepperDriver::~stepperDriver() {
@@ -66,6 +68,13 @@ void stepperDriver::setDirection(uint8_t direction) {
 	gpio_set_level((gpio_num_t) this->dir, direction);
 }
 
+uint8_t stepperDriver::getDirection(int steps_signed) {
+	if (steps_signed < 0) {
+		return 0;
+	}
+	return 1;
+}
+
 
 //Sets the microstepper mode if the stepper driver has MS1 and MS2
 void stepperDriver::set_step_mode(uint8_t MS1, uint8_t MS2) {
@@ -90,4 +99,8 @@ void stepperDriver::enable_stepper() {
 
 void stepperDriver::disable_stepper() {
 	gpio_set_level((gpio_num_t) this->EN, HIGH);
+}
+
+void stepperDriver::set_stp(uint8_t level) {
+	gpio_set_level((gpio_num_t) this->stp, level);
 }

@@ -19,6 +19,17 @@ revoluteJoint::revoluteJoint(float cur_angle,float des_angle,float max_angle,flo
 	 this->jointStepper = jointStepper;
 }
 
+revoluteJoint::revoluteJoint() {
+	 this->cur_angle = 0;       // current position (Theta)
+		 this->des_angle = 0;       // desired position (Theta)
+		 this->max_angle = 0;   // min angle of joint rotation
+		 this->min_angle = 0;   // max angle of joint rotation
+		 this->gear_ratio = 0; // output/input gear ratio
+		 this->resolution = 0; // steper motor resolution
+		 stepperDriver dummyStopper;
+		 this->jointStepper = dummyStopper;
+}
+
 revoluteJoint::~revoluteJoint() {
 	// Deconstructor
 }
@@ -59,9 +70,10 @@ int revoluteJoint::joint_to_angle(float angle) {
 	int steps_signed = calc_steps_to(angle); // The sign signals the direction to rotate
 	int steps_unsigned = abs(steps_signed);
 	printf("steps_signed: %d \n", steps_signed);
-	if (steps_signed < 0) {
+	dir = this->jointStepper.getDirection(steps_signed);
+	/*if (steps_signed < 0) {
 		dir = 1;
-	}
+	}*/
 		this->jointStepper.enable_stepper(); // Enable the stepper motor
 		this->jointStepper.step_default(dir, steps_unsigned); // Drive the stepper
 		this->jointStepper.disable_stepper(); // disable the stepper

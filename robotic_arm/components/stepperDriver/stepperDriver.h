@@ -23,6 +23,7 @@ public:
 	uint8_t MS1;
 	uint8_t MS2;
 	uint8_t EN;
+	uint8_t step_state;
 	stepperDriver(uint8_t stp,uint8_t dir,uint8_t MS1,uint8_t MS2,uint8_t EN);
 	stepperDriver();
 	void init_hardware();
@@ -31,8 +32,10 @@ public:
 	void reset_stepper();
 	void enable_stepper();
 	void disable_stepper();
+	void set_stp(uint8_t level);
 	void single_step();
-	void setDirection(uint8_t direction)
+	void setDirection(uint8_t direction);
+	uint8_t getDirection(int steps_signed);
 	void stepper_info();
 	virtual ~stepperDriver();
 };
