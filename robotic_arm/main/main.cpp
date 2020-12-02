@@ -25,10 +25,10 @@ extern "C" {
 
 void app_main(void)
 {
-
 	xTaskCreate(runRoboticArm, "runRoboticArm", 8192, NULL,1,NULL);
+	while(1) {
 
-
+	}
 }
 
 void runRoboticArm(void *arg) {
